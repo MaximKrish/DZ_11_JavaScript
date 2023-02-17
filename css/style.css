@@ -1,0 +1,297 @@
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            /* font-family: 'Open Sans', sans-serif; */
+            /* background-color: #ffffff; */
+        }
+        
+        .center {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /* =========category start========= */
+        
+        .category {
+            width: 100%;
+            margin: 0 0 96px;
+        }
+        
+        .category-list {
+            max-width: 1140px;
+            width: 100%;
+            margin: 65px auto 100px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style: none;
+            outline: 2px solid red;
+        }
+        
+        .category-menu {
+            background-image: url(../img/category_women.png);
+            width: 100%;
+            max-width: 360px;
+            min-height: 260px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+            /* margin: 0 0 30px 0; */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(33, 22, 22, 0.7);
+            background-blend-mode: darken;
+            outline: 2px solid red;
+        }
+        
+        .category-menu-big {
+            max-width: 1140px;
+            height: 180px;
+        }
+        /* .category-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+} */
+        
+        .category-menu:nth-child(2) {
+            background-image: url(../img/category_men.png);
+        }
+        
+        .category-menu:nth-child(3) {
+            background-image: url(../img/category_kids.png);
+        }
+        
+        .category-menu:nth-child(4) {
+            background-image: url(../img/category_accessories.png);
+        }
+        
+        .category-txt {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .category-subtitle {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #F16D7F;
+            text-transform: uppercase;
+        }
+        /* =========category end========= */
+        /* =======content down start======== */
+        
+        .content-down {
+            padding: 0 0 100px 0;
+            background-color: #ffffff;
+        }
+        
+        .content-down-title {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 0 48px 0;
+        }
+        
+        .content {
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto 48px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .product-item {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 0 30px 0;
+            position: relative;
+            background: #F8F8F8;
+            text-decoration: none;
+            box-sizing: border-box;
+            outline: 2px solid red;
+        }
+        
+        .product-item-photo {
+            background-image: url('../img/item_1.png');
+            display: block;
+            width: 100%;
+            height: 420px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* max-width: 360px;
+    height: 260px;
+    margin: 0 auto 25px auto;
+    background-image: url('../img/item_1.png');
+    outline: 2px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+        }
+        
+        .product-item-photo-big {
+            background-color: #f7e4e2;
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .product-item:nth-child(2)>.product-item-photo {
+            background-image: url('../img/item_2.png');
+        }
+        
+        .product-item:nth-child(3)>.product-item-photo {
+            background-image: url('../img/item_3.png');
+        }
+        
+        .product-item:nth-child(4)>.product-item-photo {
+            background-image: url('../img/item_4.png');
+        }
+        
+        .product-item:nth-child(5)>.product-item-photo {
+            background-image: url('../img/item_5.png');
+        }
+        
+        .product-item:nth-child(6)>.product-item-photo {
+            background-image: url('../img/item_6.png');
+        }
+        
+        .product-item-subtitle {
+            /* font-weight: 400;
+    font-size: 30px;
+    line-height: 36px; */
+            /* identical to box height */
+            /* color: #222222;
+    text-align: center;
+    padding: 0 0 6px 0; */
+        }
+        
+        .product-item-txt {
+            /* font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+            /*color: #9F9F9F;
+    padding: 0 0 16px 16px;
+    text-align: center; */
+        }
+        
+        .product-item-text {
+            /* font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D; */
+            /* Inside auto layout */
+            /* flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 auto 16px auto;
+    padding: 0 29px 0 16px; */
+        }
+        
+        .product-item-subsubtitle {
+            text-transform: uppercase;
+            /* font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+            /* color: #000000; */
+            /* Inside auto layout */
+            /* flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 auto 16px auto;
+    padding: 0 0 0 16px; */
+        }
+        
+        .product-item-price {
+            /* font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding: 0 0 19px 16px; */
+            /* Inside auto layout */
+        }
+        
+        .browse-wrp-btn {
+            /* width: 212px;
+    height: 48px;
+    margin: 48px auto 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px; */
+        }
+        
+        .browse-btn {
+            display: block;
+            width: 100%;
+            max-width: 211px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #F26376;
+            box-sizing: border-box;
+            color: #F26376;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+        /* font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    color: #F26376;
+    }  */
+        
+        .browse-btn:hover {
+            color: #FFFFFF;
+            background-color: #FF6A6A;
+        }
+        
+        .browse-btn:active {
+            color: #5c5454;
+            background-color: #2a9e3a;
+        }
+        /* =======content down end======== */
+        /* =======footer top start========= */
+        
+        .footer-top {}
+        
+        .footer-item {}
+        
+        .footer-item-photo {}
+        
+        .footer-item-subtitle {}
+        
+        .footer-item-text {}
+        /* =======footer top end========= */
