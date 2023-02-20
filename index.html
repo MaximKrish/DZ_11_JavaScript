@@ -15,24 +15,6 @@
 
 <body>
     <div class="container">
-        <!-- <div class="menu-header">
-            <div class="menu-header-item">
-                <div class="menu-item-left">
-                    <a href="#" class="logo-magazine">
-                        <img src="/img/logo.png" alt="logo">
-                    </a>
-                    <form action="#" class="menu-search">
-                        <input type="search">
-                    </form>
-                </div>
-            </div>
-
-
-        </div> -->
-
-
-
-
         <section class="category">
             <ul class="category-list">
                 <li class="category-menu">
@@ -104,33 +86,49 @@
                 </button>
             </div>
         </section>
-        <div class="footer-top">
-            <div class="footer-item">
-                <div class="footer-item-photo"></div>
-                <h3 class="footer-item-subtitle">Free Delivery</h3>
-                <p class="footer-item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="footer-item">
-                <div class="footer-item-photo"></div>
-                <h3 class="footer-item-subtitle">Free Delivery</h3>
-                <p class="footer-item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="footer-item">
-                <div class="footer-item-photo"></div>
-                <h3 class="footer-item-subtitle">Free Delivery</h3>
-                <p class="footer-item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-        </div>
-
-
-
-
-
-
-
+        <div class="Featured_Items_JS"></div>
 
     </div>
 
+    <script src="data.js"></script>
+
+    <script>
+        const featuredIt = document.querySelector('.Featured_Items_JS');
+        const div = document.createElement('div');
+        div.classList.add('content_JS', 'content');
+        featuredIt.appendChild(div);
+
+        const contentEl = document.querySelector('.content_JS');
+        const data = JSON.parse(dataDZ);
+
+        data.forEach(element => {
+
+            const divPr = document.createElement('div');
+            divPr.classList.add('product-item');
+            contentEl.appendChild(divPr);
+
+            const featuredImg = document.createElement('div');
+            featuredImg.classList.add('product-item-photo');
+            featuredImg.src = element.picture;
+            divPr.appendChild(featuredImg);
+
+            const titleEl = document.createElement('h3');
+            titleEl.classList.add('product-item-subsubtitle');
+            titleEl.textContent = element.title;
+            divPr.appendChild(titleEl);
+
+            const textEl = document.createElement('p');
+            textEl.classList.add('product-item-text');
+            textEl.textContent = element.text;
+            divPr.appendChild(textEl);
+
+            const priceEl = document.createElement('div');
+            priceEl.classList.add('product-item-price');
+            priceEl.textContent = element.price;
+            divPr.appendChild(priceEl);
+
+        });
+    </script>
 </body>
 
 </html>
